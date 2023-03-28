@@ -1,0 +1,53 @@
+1. WORKING WITH TEXT.
+
+<p> - for paragraphs. /
+      creates 1 line indent between a new paragraph and a text above.
+
+<h1> - <h6> - headings. /
+
+<strong> - makes a text bold + emphasizing its importance. /
+<em> - italic style + also emphasizing its importance. /
+<b> and <i>. /
+    These create bold and italic styles as well, 
+    but unlike <strong> and <em> they do not emphasize text importance.
+
+<!-- comment -->.
+
+_____
+
+2. LISTS.
+
+<ul> - Unordered List. Each item begins with a bullet point. /
+<ol> - Ordered List. Begins with numbers. /
+
+Inside each type of the lists elements are created with <li>. /
+
+_____
+
+3.1. LINKS.
+
+<a> - (anchor element) Creates links. /
+      The element has an attribute "href"(hyperlink reference), 
+      the value of which is a link.
+
+*** There are two types of links: absolute and relative.
+    * Absolute are the links with a domain in the beginning.
+    * Relative lead only to pages located on my website. 
+      It searches for files from current directory.
+
+
+3.2. IMAGES.
+
+<img> - Self-closing tag. Loads an image direclty to a website.
+        Must have the "src" and "alt" attributes, 
+        first of which is the same as href for <a>, the second one stands for
+        (alternative text) and is used to describe an image. 
+        It will be used at the place of an image if the image cannot be loaded.
+    
+    - 4 main image formats:
+        - JPG is great for usual pictures, doesn't allow transparency.
+        - GIF is great for animations. Never use it for pictures.
+        - PNG allows transparency, the same quality of an image 
+            would weight way more than the same .jpg images.
+        - SVG never loses its quality in any dimension, 
+            because it's not made of pixels. Wonderful tool for responsive design. 

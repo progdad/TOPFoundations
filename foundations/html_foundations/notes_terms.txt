@@ -1,0 +1,19 @@
+Tag - a predefined word wrapped into angle brackets. 
+
+Element - an entity that consists of 3 parts: 
+    openning tag, content, closing tag.
+
+Attribute - gives additional information to an HTML element 
+    and always goes in the element’s opening tag.
+    May be made of two parts: a name and a value. Or just a name.
+
+---
+
+Git commit tips:
+    1. Separate subject from body with a blank line
+    2. Limit the subject line to 50 characters
+    3. Capitalize the subject line
+    4. Do not end the subject line with a period
+    5. Use the imperative mood in the subject line
+    6. Wrap the body at 72 characters
+    7. Use the body to explain what and why vs. how
