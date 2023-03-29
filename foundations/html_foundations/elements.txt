@@ -38,7 +38,7 @@ _____
 
 3.2. IMAGES.
 
-<img> - Self-closing tag. Loads an image direclty to a website.
+<img> - Self-closing tag. Loads an image directly to a website.
         Must have the "src" and "alt" attributes, 
         first of which is the same as href for <a>, the second one stands for
         (alternative text) and is used to describe an image. 
