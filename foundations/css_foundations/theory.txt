@@ -1,0 +1,20 @@
+*****
+
+BASIC SYNTAX:
+
+selector {
+    property: value
+}
+
+1.1 Selectors are just reference to an html element,
+    to which css rules, listed in curly brackets, will be applied.
+
+1.2 Types of selectors:
+    1. Universal(select everything, any type) - "*".
+    2. Type(select all elements of the given type) - "<name of a tag>".
+    3. Class(select all elements of the given class) - ".<class-name>".
+        Multi-class is possible.
+    4. ID(id is id, must be unique for each element) - "#<title>".
+
+*****
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Syntax</title>
+</head>
+<body>
+    <style>
+        /* 1. GROUPING SELECTORS*/
+        .read,
+        .unread {
+          color: black;
+          background-color: gray;
+        }
+
+        .read {
+            width: 200px;
+        }
+
+        .unread {
+            width: 300px;
+            height: 50px;
+        }
+        /* That way we don't write the same styles twice. */
+
+        /* 2. CHAINING SELECTORS */
+        .subsection.header {
+            color: red;
+        }
+        
+        div p.preview {
+            color: blue;
+        }
+        
+        p.subsection#description {
+            color: pink;
+        }
+        
+        div.ancestor img.img {
+            width: 200px;
+        }
+        /* 
+        A lot of different ways to chain selectors.
+        Watch this video: 
+        https://www.youtube.com/watch?v=6VGKD7p4p-w
+        */
+
+
+    </style>
+    
+    <!-- 1. GROUPING SELECTORS -->
+    <div>
+        <p class="read">Read text.</p>
+        <p class="unread">Unread text.</p>
+    </div>
+    <!-- -->
+
+    <!-- 2. CHAINING SELECTORS -->
+    <div class="ancestor">
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection preview">This is where a preview for a post might go.</p>
+        <p class="subsection" id="description">Some text</p>
+        <img class="subsection img" src="./noodles.jpeg" alt="noodles">
+    </div>
+    <!-- -->
+
+</body>
+</html>
