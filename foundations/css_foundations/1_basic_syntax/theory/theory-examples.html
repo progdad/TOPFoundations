@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Syntax</title>
+
+    <style>
+        /* 1. GROUPING SELECTORS*/
+            .read,
+            .unread {
+              color: black;
+              background-color: gray;
+            }
+    
+            .read {
+                width: 200px;
+            }
+    
+            .unread {
+                width: 300px;
+                height: 50px;
+            }
+            /* That way we don't write the same styles twice. */
+    
+        /* 2. CHAINING SELECTORS */
+            .subsection.header {
+                color: red;
+            }
+            
+            div p.preview {
+                color: blue;
+            }
+            
+            p.subsection#description {
+                color: pink;
+            }
+            
+            div.ancestor img.img {
+                width: 200px;
+            }
+            /* 
+            A lot of different ways to chain selectors.
+            */
+    
+        /* 3. SPECIFICITY */
+    
+            /* rule 3.0.1 */
+            .subsection-3 {
+                color: blue;
+            }
+    
+            /* rule 3.0.2 */
+            .main-3 .list-3 {
+                color: red;
+            }
+            /*
+            Both rules are using only class selectors, 
+            but rule 2 is more specific because it is using more class selectors, 
+            so the color: red; declaration would take precedence.
+            */
+    
+    
+            /* rule 3.1.1 */
+            #subsection-3-1 {
+                color: blue;
+            }
+    
+            /* rule 3.1.2 */
+            .main-3-1 .list-3-1 {
+                color: red;
+            }
+            /* 
+            Despite rule 2 having more class selectors than ID selectors, 
+            rule 1 is more specific because ID beats class. 
+            In this case, the color: blue; declaration would take precedence. 
+            */
+    
+    
+            /* rule 3.2.1 */
+            .list-3-2 #subsection-3-2 {
+                background-color: yellow;
+                color: blue;
+            }
+    
+            /* rule 3.2.2 */
+            .main-3-2 .list-3-2 #subsection-3-2 {
+                color: red;
+            }
+            /*
+            Both rules are using ID and class selectors, 
+            so neither rule is using a more specific selector than the other. 
+            The cascade then checks the amounts of each selector type. 
+            Both rules only have one ID selector, but rule 2 has more class selectors, 
+            so rule 2 has a higher specificity!
+    
+            While the "color: red" declaration would take precedence, 
+            the "background-color: yellow" declaration would still be applied 
+            since there’s no conflicting declaration for it.
+            */
+            
+    
+        </style>
+</head>
+<body>
+    <!-- 1. GROUPING SELECTORS -->
+    <div>
+        <p class="read">Read text.</p>
+        <p class="unread">Unread text.</p>
+    </div>
+    <!-- -->
+
+    <!-- 2. CHAINING SELECTORS -->
+    <div class="ancestor">
+        <div class="subsection header">Latest Posts</div>
+        <p class="subsection preview">This is where a preview for a post might go.</p>
+        <p class="subsection" id="description">Some text</p>
+        <img class="subsection img" src="https://img.freepik.com/free-vector/colorful-palm-silhouettes-background_23-2148541792.jpg?w=2000" alt="Palms and sunset">
+    </div>
+    <!-- -->
+
+    <!-- 3. SPECIFICITY -->
+    <div class="main-3">
+        <div class="list-3 subsection-3">First</div>
+    </div>  
+    
+    <div class="main-3-1">
+        <div class="list-3-1" id="subsection-3-1">Second</div>
+      </div>
+
+    <div class="main-3-2">
+        <div class="list-3-2">
+            <div id="subsection-3-2">Third</div>
+        </div>
+    </div>
+    <!-- -->
+
+</body>
+</html>
