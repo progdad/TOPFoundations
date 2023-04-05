@@ -31,9 +31,9 @@ _____
       the value of which is a link.
 
 *** There are two types of links: absolute and relative.
-    * Absolute are the links with a domain in the beginning.
-    * Relative lead only to pages located on my website. 
-      It searches for files from current directory.
+    * Absolute links are the links with a domain in the beginning.
+    * Relative ones lead only to pages located on my website. 
+      It searches for files from the current directory.
 
 
 3.2. IMAGES.

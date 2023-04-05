@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: #EB5757;
+    padding: 20px;
+    border: 40px solid #9851e0;
+    margin: 60px;
+    height: 100px;
+    width: 100px;
+}
+
+.box-two {
+    background-color: #2d9cdb;
+    padding: 10px;
+    border: 30px solid #27ae60;
+    margin: 70px;
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+    /* 
+    Having set the "box-sizing: border-box", 
+    an element's width and height will include paddings and borders.
+    */
+} 

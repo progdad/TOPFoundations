@@ -23,13 +23,8 @@ Selectors are just references to html elements,
 
 2. BASIC PROPERTIES:
 
----
-
-2.1.
-"color", "background-color" - accept a keyword, such as "red" or "transparent".
+2.1. "color", "background-color" - accept a keyword, such as "red" or "transparent".
     Also accept HEX, RGD and HSL.
-
----
 
 2.2. Typography Basics and Text-Align.
 
