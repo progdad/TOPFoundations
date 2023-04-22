@@ -4,3 +4,5 @@ on some simple rules that you can define.
 
 A flex container is any element that has display: flex on it. 
 A flex item is any element that lives directly inside of a flex container.
+
+https://www.theodinproject.com/lessons/foundations-introduction-to-flexbox

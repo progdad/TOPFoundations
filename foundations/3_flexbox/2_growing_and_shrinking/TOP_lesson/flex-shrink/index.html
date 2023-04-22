@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../common-styles.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+
+    <p class="note">
+        <code>flex-shrink</code> is similar to <code>flex-grow</code>, 
+        but sets the “shrink factor” of a flex item. 
+        <code>flex-shrink</code> only ends up being applied 
+        if the size of all flex items is larger than their parent container. 
+        For example, if our 3 divs from above had a width declaration 
+        like: <code>width: 100px</code>, and <code>.flex-container</code> 
+        was smaller than 300px, our divs would have to shrink to fit.
+
+        The default shrink factor is <code>flex-shrink: 1</code>, 
+        which means all items will shrink evenly. If you do not want an item 
+        to shrink then you can specify <code>flex-shrink: 0;</code>. 
+        You can also specify higher numbers to make 
+        certain items shrink at a higher rate than normal.
+    </p>
+
+    <p class="note">
+        An important implication to notice here is that when you specify 
+        <code>flex-grow</code> or <code>flex-shrink</code>, flex items 
+        do not necessarily respect your given values for <code>width</code>. 
+        In the above example, all 3 divs are given a width of 250px, 
+        but when their parent is big enough, they grow to fill it. 
+        Likewise, when the parent is too small, 
+        the default behavior is for them to shrink to fit.
+    </p>
+</body>
+</html>

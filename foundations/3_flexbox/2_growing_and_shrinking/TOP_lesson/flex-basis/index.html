@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <link rel="stylesheet" href="../common-styles.css">
+</head>
+<body>
+    <p class="note">
+        <code>flex-basis</code> simply sets the initial size of a flex item, 
+        so any sort of <code>flex-grow</code>ing or <code>flex-shrink</code>ing 
+        starts from that baseline size. The shorthand value defaults 
+        to <code>flex-basis: 0%</code>. The reason we had 
+        to change it to <code>auto</code> in the <code>flex-shrink</code> 
+        example is that with the basis set to <code>0</code>, 
+        those items would ignore the item's width, and everything 
+        would shrink evenly. Using <code>auto</code> as a flex-basis tells 
+        the item to check for a width declaration (<code>width: 250px</code>).
+    </p>
+
+    <p class="note">
+        There is a difference between the default value of 
+        <code>flex-basis</code> and the way the <code>flex</code> 
+        shorthand defines it if no <code>flex-basis</code> is given. 
+        The actual default value for <code>flex-basis</code> is 
+        <code>auto</code>, but when you specify <code>flex: 1</code> 
+        on an element, it interprets that as <code>flex: 1 1 0</code>. 
+        If you want to <em>only</em> adjust an item's <code>flex-grow</code> 
+        you can simply do so directly, without the shorthand. 
+        Or you can be more verbose and use the full 3 value shorthand 
+        <code>flex: 1 1 auto</code>, which is also equivalent to using 
+        <code>flex: auto</code>.
+    </p>
+
+    <p class="note">
+        <code>flex: auto</code> is one of the shorthands of flex. 
+        When <code>auto</code> is defined as a flex keyword it is equivalent 
+        to the values of <code>flex-grow: 1</code>, <code>flex-shrink: 1</code> 
+        and <code>flex-basis: auto</code> or to <code>flex: 1 1 auto</code> 
+        using the flex shorthand. Note that <code>flex: auto</code> is not 
+        the default value when using the flex shorthand despite the name being 
+        “auto” which may be slightly confusing at first. 
+    </p>
+</body>
+</html>
