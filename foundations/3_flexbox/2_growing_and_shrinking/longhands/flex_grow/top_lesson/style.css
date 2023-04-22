@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+  }
+  
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 100px;
+    flex: 1 1 0%;
+  }
+  
+.flex-container .two {
+    flex: 2 1 0%;
+  }
+
+/* This selectors' chaining is just a remainder of how specificity works */
+.block-note#id-div-note p {
+    color: rgb(0, 0, 0);
+}
+
+.block-note #id-p-note {
+    color: green;
+}
+/*   */
