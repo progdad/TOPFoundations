@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="parent" id="first-p">
+        <div class="child child-one">child</div>
+        <div class="child child-two">child</div>
+        <div class="child child-three">child</div>
+    </div>  
+
+    <div class="parent" id="second-p">
+        <div class="child child-one">child</div>
+        <div class="child child-two">
+            <!-- Again, adding more content to the other children will still have an impact -->
+            And this is a lot of content, okay? Okay? 
+            And this is a lot of content, okay? Okay? 
+            And this is a lot of content, okay? Okay? 
+            And this is a lot of content, okay? Okay?
+        </div>
+        <div class="child child-three">child</div>
+    </div>
+  
+    <!-- 
+        There is also a "flex-wrap" property.
+        By default, flex items will try to fit into one line 
+        but flex-wrap: wrap will ignore that entirely. 
+        Now, if those flex items can’t fit in 
+        the same space, they’ll break onto a new line.  
+    -->
+
+</body>
+</html>
