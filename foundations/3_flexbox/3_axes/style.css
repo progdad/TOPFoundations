@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container div {
+    background: peachpuff;
+    border: 4px solid brown;
+    height: 80px;
+    flex: 1 1 auto;
+}
+
+/**/
+
+p {
+    font-size: 20px;
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+    max-width: 800px;
+    margin: 25px auto;
+    background-color: antiquewhite;
+    padding: 15px;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+
+code {
+    display: inline-block;
+    color:rgb(0, 3, 46);
+    background-color: rgb(255, 208, 121);
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin: 1px 0;
+}
+
+
+/* 
+    This is one piece of code from ./index.html, 
+    the styles of which are below,
+    was an interesting task to tackle: 
+        1. Break it onto a new line.
+        2. Preserve "display: inline-block" state.
+        3. Center it in relation to the parent block <p>.
+
+    That's how I did it:
+*/
+
+span.code {
+    display: block;
+    text-align: center; 
+}
+
+code#fd-column {
+    text-align: left; 
+    padding: 10px 15px;
+}
