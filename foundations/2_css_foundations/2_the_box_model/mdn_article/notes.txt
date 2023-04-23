@@ -35,7 +35,7 @@ Source: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_b
     # There is another VERY important meaning of that: 
         Margins and paddings of elements that neighbor 
     with inline elements count their indents between them and those inline elements
-    without considering the neighbors' paddings,, borders and margins.
+    without considering the neighbors' paddings, borders and margins.
 
     
     - Left and right "padding", "margins", and "borders" will apply 
