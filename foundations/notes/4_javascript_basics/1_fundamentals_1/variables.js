@@ -83,14 +83,16 @@ difficult-to-remember values that are known prior to execution.
 
 Such constants are named using capital letters and underscores.
 
-So capital-named constants are only used as aliases for “hard-coded” values.
+So capital-named constants are the best to be used only as aliases for “hard-coded” values.
 */
 const COLOR_GREEN = "#0F0";
 const COLOR_BLUE = "#00F";
 const COLOR_ORANGE = "#FF7F00";
 
 /*
-
+In programming, "hard-coded" refers to values that are directly 
+written into the source code of a program, rather than being 
+dynamically generated or read from an external source. 
 */
 
 
